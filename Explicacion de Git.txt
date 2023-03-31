@@ -1,0 +1,23 @@
+git config user.name ""       -- Es para colocar mi nombre del dueño del repositorio
+
+git config user.email ""        -- Es para poner mi email
+
+git remote add origin(nombre del repositorio remoto) "(copiar el link https del repositorio que esta en github)"    -- Es para sincronizar con el repositorio remoto de GitHub
+
+git remote add origin "https://github.com/AndresNicolasTapia/pruebagit.git" - ejemplo
+
+
+git status	-- Es para ver si hay un archivo local que no esta agregado al repositorio local.  (aparece en rojo si no esta agregado)
+
+git add (poner el archivo del texto)		-- Es para agregarlo en el repositorio local provisoriamente	
+
+git add archivo.txt - ejemplo
+
+Ahora para pasar al repositorio local en forma definitiva es con :
+git commit -m "(Y aca dejamos uns msj, es obligatorio)" 
+
+--
+Ahora para pasarlo al repositorio remoto: es con push
+
+git push -u (origin/(nombre del repositorio)) (master/nombre de la rama)
+git push -u origin master
